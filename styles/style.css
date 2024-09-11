@@ -275,11 +275,11 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .header h2 {
-    font-size: 45.8px;
+    font-size: 48.8px;
     line-height: 70.4px;
   }
   .header p {
-    font-size: 20.2px;
+    font-size: 18.2px;
     line-height: 36.8px;
   }
   .input_field .input {
