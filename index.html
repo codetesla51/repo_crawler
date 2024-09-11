@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="vendors/styles/icon-font.min.css"
+            type="text/css"
+            media="all"
+        />
+        <link rel="stylesheet" href="js/aos.css" type="text/css" media="all" />
+        <title>Repo Crawler</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <style>
+            @media only screen and (max-width: 768px) {
+                html {
+                    font-size: 50%;
+                }
+                .input_field input {
+                    width: 240px;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                .input_field input {
+                    width: 100px;
+                    height: 35px;
+                    padding: 0 15px 0 30px;
+                }
+
+                .input_field select {
+                    width: 100%;
+                    height: 35px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loader-container">
+            <div class="code-loader">
+                <span>{</span>
+
+                <span>}</span>
+            </div>
+            <p>Repo-Crawler</p>
+        </div>
+        <div class="nav_bar" data-aos="fade-up">
+            <div class="nav">
+                <div class="logo">repo-crawler</div>
+                <div class="repo_link">
+                    <button class="git">
+                        Star on Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section class="header" data-aos="fade-up">
+            <h2>Find Popular Github Repositories With Ease</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia quidem necessitatibus molestias, aliquid fugiat placeat,
+                odit nostrum porro fuga inventore animi sunt voluptas et maxime
+                tempora! Explicabo repellendus quisquam, hic?
+            </p>
+        </section>
+        <div class="input_field" data-aos="fade-up">
+            <input
+                type="text"
+                id="searchQuery"
+                class="input"
+                placeholder="Enter search query"
+            />
+            <select id="lang">
+                <option value="">All Languages</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Go">Go</option>
+                <option value="Rust">Rust</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Swift">Swift</option>
+                <option value="TypeScript">TypeScript</option>
+                <option value="C#">C#</option>
+                <option value="Perl">Perl</option>
+                <option value="Shell">Shell</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="SCSS">SCSS</option>
+                <option value="SQL">SQL</option>
+                <option value="R">R</option>
+                <option value="Lua">Lua</option>
+                <option value="Objective-C">Objective-C</option>
+                <option value="VBA">VBA</option>
+                <option value="MATLAB">MATLAB</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Elixir">Elixir</option>
+                <option value="Erlang">Erlang</option>
+                <option value="Dart">Dart</option>
+                <option value="Scala">Scala</option>
+                <option value="F#">F#</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Assembly">Assembly</option>
+                <option value="Fortran">Fortran</option>
+                <option value="Pascal">Pascal</option>
+                <option value="VB.NET">VB.NET</option>
+                <option value="COBOL">COBOL</option>
+                <option value="Groovy">Groovy</option>
+                <option value="Ada">Ada</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Julia">Julia</option>
+                <option value="Tcl">Tcl</option>
+                <option value="Lisp">Lisp</option>
+                <option value="Racket">Racket</option>
+                <option value="Smalltalk">Smalltalk</option>
+                <option value="VHDL">VHDL</option>
+                <option value="Verilog">Verilog</option>
+                <option value="OCaml">OCaml</option>
+            </select>
+            <button id="searchButton" class="serc">Search Query</button>
+        </div>
+        <div class="loader" id="loader"></div>
+
+        <section class="main">
+            <div class="head" id="resultsHeading" style="display: none">
+                <h3>Search Results</h3>
+            </div>
+            <div class="repos" id="results" ></div>
+        </section>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src=" js/script.js"></script>
+    </body>
+</html>
