@@ -141,7 +141,7 @@ body {
   border: 2px solid #984ed6;
 }
 .main .repos .repo .additional-info {
-  width: 85%;
+  width: 95%;
   padding: 1em 1em;
   background: #0f0529;
   border-radius: 8px;
@@ -275,7 +275,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .header h2 {
-    font-size: 40.8px;
+    font-size: 45.8px;
     line-height: 70.4px;
   }
   .header p {
